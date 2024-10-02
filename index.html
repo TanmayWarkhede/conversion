@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Creation Copilot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Creation Copilot</h1>
+
+        <!-- Course Content Input -->
+        <div class="form-group">
+            <label for="courseContent">Enter Course Content:</label>
+            <textarea id="courseContent" rows="6" placeholder="Enter your course content here..."></textarea>
+        </div>
+
+        <!-- Language Selection -->
+        <div class="form-group">
+            <label for="language">Translate to Language:</label>
+            <select id="language">
+                <option value="hi">Hindi</option>
+                <option value="ta">Tamil</option>
+                <option value="te">Telugu</option>
+                <option value="bn">Bengali</option>
+                <option value="mr">Marathi</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="form-group">
+            <button id="translateBtn">Translate Content</button>
+            <button id="ttsBtn">Convert to Speech</button>
+        </div>
+
+        <!-- Output -->
+        <div class="form-group">
+            <label for="translatedContent">Translated Content:</label>
+            <textarea id="translatedContent" rows="6" readonly></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="audioOutput">Audio Output:</label>
+            <audio id="audioOutput" controls></audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
